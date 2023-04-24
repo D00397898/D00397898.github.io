@@ -85,7 +85,7 @@ addUserButton.onclick = function () {
 
     console.log(fname, lname, username, password)
     console.log('data: ', data)
-    fetch(`{URL}users/`, {
+    fetch(URL + "users/", {
       method: 'POST',
       body: data,
       credentials: 'include', //DO THIS ON ALL REQUESTS
@@ -114,12 +114,8 @@ queryUserButton.onclick = function () {
   if (usernameInput.value != '' && passwordInput.value != '') {
     data =
       'username=' + encodeURIComponent(usernameInput.value) + '&password=' + encodeURIComponent(passwordInput.value)
-    console.log('data: ', data)
 
-    // document.querySelector("#loginP").style.display = "inline";
-    // document.querySelector("#loginP").innerHTML = "Processing";
-
-    fetch(`{URL}sessions/`, {
+    fetch(URL + "sessions/", {
       method: 'POST',
       body: data,
       credentials: 'include', //DO THIS ON ALL REQUESTS
@@ -148,7 +144,7 @@ signOutButton.onclick = function () {
   console.log('pressed sign out')
   console.log('so sad to see you go :(')
 
-  fetch(`{URL}sessions/` + document.cookie.split('"')[1], {
+  fetch(URL + "sessions/" + document.cookie.split('"')[1], {
     method: 'DELETE',
     credentials: 'include',
     headers: {
@@ -172,7 +168,7 @@ signOutButton.onclick = function () {
 }
 
 function loadTasksFromServer() {
-  fetch(`{URL}tasks/`, {
+  fetch(URL + "tasks/", {
     credentials: 'include'
   }).then(function (response) {
     if (response.status != 200) {
@@ -263,7 +259,7 @@ function createTaskOnServer(taskID, taskName, taskDateAssigned, taskDueDate, tas
   console.log('sending data to server:', data)
 
   // For every fetch, add credentials include
-  fetch(`{URL}tasks/`, {
+  fetch(URL + "tasks/", {
     // request details:
     credentials: 'include',
     method: 'POST',
@@ -283,7 +279,7 @@ function createTaskOnServer(taskID, taskName, taskDateAssigned, taskDueDate, tas
 }
 
 function deleteTaskFromServer(taskId) {
-  fetch(`{URL}tasks/` + taskId, {
+  fetch(URL + "tasks/" + taskId, {
     credentials: 'include',
     method: 'DELETE'
   }).then(function (response) {
@@ -302,7 +298,7 @@ function updateTaskOnServer(taskID, taskName, taskDateAssigned, taskDueDate, tas
   data += '&priority=' + encodeURIComponent(taskPriority)
   data += '&desc=' + encodeURIComponent(taskDesc)
 
-  fetch(`{URL}tasks/` + taskID, {
+  fetch(URL + "tasks/" + taskID, {
     credentials: 'include',
     method: 'PUT',
     body: data,
