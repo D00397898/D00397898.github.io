@@ -1,0 +1,196 @@
+body {
+  font-family: Helvetica;
+  text-align: center;
+  background-color: #CDB8A2;
+}
+
+ol {
+    width: 80%;
+    display: inline-block;
+    text-align: center;
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+    width: 80%;
+    display: inline-block;
+    text-align: center;
+    border: 5px solid lightgrey;
+    background: #eeeeee;
+    margin: 20px;
+    padding: 10px;
+    font-weight: bold;
+    background-color: white;
+    text-align: left;
+}
+
+#add-task-button {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+  text-align: center;
+  font-size: 16px;
+  padding: 12px;
+  margin: 4px 2px;
+}
+
+#add-task-button:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#save-task-button {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4683B7;
+  text-align: center;
+  font-size: 16px;
+  padding: 12px;
+  margin: 4px 2px;
+}
+
+#save-task-button:hover {
+  background-color: #4683B7;
+  color: white;
+}
+
+#task-name-edit[type=text] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+#task-name-edit[type=text]:focus {
+  border: 3px solid #555;
+}
+
+#task-date-assigned-edit[type=text] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+#task-date-assigned-edit[type=text]:focus {
+  border: 3px solid #555;
+}
+
+#task-due-date-edit[type=text] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+#task-due-date-edit[type=text]:focus {
+  border: 3px solid #555;
+}
+
+#task-priority-edit[type=number] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+#task-priority-edit[type=number]:focus {
+  border: 3px solid #555;
+}
+
+#task-desc-edit[type=text] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+#task-desc-edit[type=text]:focus {
+  border: 3px solid #555;
+}
+
+#task-name[type=text] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+#task-name[type=text]:focus {
+  border: 3px solid #555;
+}
+
+#task-date-assigned[type=text] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+#task-date-assigned[type=text]:focus {
+  border: 3px solid #555;
+}
+
+#task-due-date[type=text] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+#task-due-date[type=text]:focus {
+  border: 3px solid #555;
+}
+
+#task-priority[type=number] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+#task-priority[type=number]:focus {
+  border: 3px solid #555;
+}
+
+#task-desc[type=text] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+#task-desc[type=text]:focus {
+  border: 3px solid #555;
+}
