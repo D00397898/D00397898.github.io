@@ -85,7 +85,7 @@ addUserButton.onclick = function () {
 
     console.log(fname, lname, username, password)
     console.log('data: ', data)
-    fetch(URL + "users/", {
+    fetch(URL + "users", {
       method: 'POST',
       body: data,
       credentials: 'include', //DO THIS ON ALL REQUESTS
@@ -168,7 +168,7 @@ signOutButton.onclick = function () {
 }
 
 function loadTasksFromServer() {
-  fetch(URL + "tasks/", {
+  fetch(URL + "tasks", {
     credentials: 'include'
   }).then(function (response) {
     if (response.status != 200) {
