@@ -115,7 +115,7 @@ queryUserButton.onclick = function () {
     data =
       'username=' + encodeURIComponent(usernameInput.value) + '&password=' + encodeURIComponent(passwordInput.value)
 
-    fetch(URL + "sessions/", {
+    fetch(URL + "sessions", {
       method: 'POST',
       body: data,
       credentials: 'include', //DO THIS ON ALL REQUESTS
@@ -259,7 +259,7 @@ function createTaskOnServer(taskID, taskName, taskDateAssigned, taskDueDate, tas
   console.log('sending data to server:', data)
 
   // For every fetch, add credentials include
-  fetch(URL + "tasks/", {
+  fetch(URL + "tasks", {
     // request details:
     credentials: 'include',
     method: 'POST',
