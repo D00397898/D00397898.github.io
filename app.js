@@ -1,5 +1,5 @@
 let myTasks = []
-let URL = "https://s23-deploy-d00397898-production.up.railway.app"
+let URL = "https://s23-deploy-d00397898-production.up.railway.app/"
 
 //After edit button event, it assigns this to PointerEvent and I don't know how to chagne that
 let task_id = 0
